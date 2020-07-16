@@ -10,7 +10,7 @@ class App extends React.Component {
     movies: [],
     isLoding: true
   }
-  // apl(yts)를 불러옴
+  // 영화 apl를 불러옴
   getMovies =  async () =>{
     const {data: {data: {movies}}} = await axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=rating"); // await : axios가  끝날떄가지 기다려줌
     this.setState({movies, isLoding: false}) //  movies : setDtate, axios(es6)
@@ -28,7 +28,7 @@ class App extends React.Component {
             <span className="loader_text"> Loading....</span>
           </div>
         ) : (
-            <div className="movies">
+            <div className="movies"> // 영화의 정보들
               {movies.map(movie => (
                 <Movie
                   key={movie.id}
