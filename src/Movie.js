@@ -3,7 +3,7 @@ import ProTypes from "prop-types";
 import "./Movie.css";
 
 function Movie({ year, title, summary, poster, genres}){
-    return <div className="movie">
+    return <div className="movie"> //영화 이미지,제목,장르등 html
         <img src={poster} alt={title} title={title} />
         <div className="movie_data">
             <h3 className="movie_title">{title}</h3>
