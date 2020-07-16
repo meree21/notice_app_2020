@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <section className="container">
         {isLoding ? (
-          <div className="loader">
+          <div className="loader"> //API를 가져올떄까지 띄워주는 
             <span className="loader_text"> Loading....</span>
           </div>
         ) : (
