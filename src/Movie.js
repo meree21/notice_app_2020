@@ -17,7 +17,7 @@ function Movie({ year, title, summary, poster, genres}){
         </div>
     </div>
 }
-// App.js에 있는 props를 가져옵니다.
+// App.js에 있는 영화정보의 props를 가져옵니다.
 Movie.ProTypes = {
     id: ProTypes.number.isRequired,
     year: ProTypes.number.isRequired,
