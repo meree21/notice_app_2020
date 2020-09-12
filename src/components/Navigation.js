@@ -6,7 +6,7 @@ function Navigation(...props) {
   return (
     <div className="nav">
       <Link to="/">Home</Link>
-      <Link to="/SingIn">SingIn</Link>
+      <Link to="/LoginForm">SingIn</Link>
       <Link to="/notice">notice</Link>
     </div>
   );
